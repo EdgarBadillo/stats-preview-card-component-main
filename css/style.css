@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #090b1a;
+  font-size: 15px;
+}
+
+.container {
+  background: #1b1938;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  margin: 2rem;
+      grid-template-areas: "A A A" "B B B" "C C C";
+  row-gap: 50px;
+  border-radius: 1%;
+}
+
+.container img {
+  border-radius: 1%;
+}
+
+.header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: A;
+}
+
+.text {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: B;
+  display: -ms-grid;
+  display: grid;
+  row-gap: 1rem;
+}
+
+.text h1 {
+  color: white;
+  text-align: center;
+  font-family: "Inter";
+}
+
+.text h1 span {
+  color: #aa5cdb;
+}
+
+.text p {
+  font-family: "Lexend Deca";
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.base {
+  display: -ms-grid;
+  display: grid;
+  row-gap: 1.5rem;
+  margin-bottom: 3rem;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: C;
+}
+
+.base p {
+  font-family: "Lexend Deca";
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.base span {
+  color: white;
+  text-align: center;
+  font-family: "Inter";
+}
+/*# sourceMappingURL=style.css.map */
