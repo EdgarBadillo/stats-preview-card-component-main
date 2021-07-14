@@ -12,6 +12,11 @@ $white: hsl(0, 0%, 100%);
 $slightly-transparent-white: hsla(0, 0%, 100%, 0.75);
 $transparent-white: hsla(0, 0%, 100%, 0.6);
 
+// media queries
+$mobile  : 576px;
+$laptop  : 992px; 
+
+
 @mixin p-theme{
 
     font-family: "Lexend Deca";
@@ -57,22 +62,47 @@ body{
     row-gap: 50px;
     border-radius: 1%;
 
-        img{
-
-            border-radius: 1%;
-        }
-
+       
 
 
 }
+
+// @media screen and (min-width : 576px){
+
+//     .container{
+
+//         grid-template-areas: 
+//         " B  A A"
+//         " C  A A";
+
+//         margin: 6rem;
+
+            
+
+//     }
+    
+
+// }
+
+
 
 .header{
     
     grid-area: A;
-   
+    background-color: $soft-violet;
+    background-image: url(/images/image-header-mobile.jpg);
+    opacity: .25;
+    height: 20rem;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
    
        
 }
+
+
+
 
 .text{
 
@@ -85,7 +115,7 @@ body{
         // color: $white;
         // text-align: center;
         // font-family: "Inter";
-        @include h1-theme()
+        @include h1-theme();
         
             span{
                 color: $soft-violet;
@@ -102,6 +132,7 @@ body{
         @include p-theme()
     }
 }
+
 
 .base{
 
@@ -124,3 +155,4 @@ body{
 
 
 }
+
