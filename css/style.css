@@ -101,4 +101,51 @@ body span {
   color: white;
   font-size: 30px;
 }
+
+@media (min-width: 970px) {
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .card-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    padding: 0;
+    margin-top: 15rem;
+    border-radius: 2%;
+  }
+  .card-img {
+    background-image: url(/images/image-header-desktop.jpg);
+    height: auto;
+    border-bottom-right-radius: 2%;
+    border-top-left-radius: 0;
+  }
+  .card-text {
+    padding: 3rem;
+  }
+  .card-text h1 {
+    text-align: left;
+  }
+  .card-text p {
+    text-align: left;
+  }
+  .card-metrics {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
 /*# sourceMappingURL=style.css.map */

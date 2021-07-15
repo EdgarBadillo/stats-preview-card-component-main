@@ -72,10 +72,6 @@ justify-content: center;
     padding-bottom: 3rem;
     border-radius: 3%;
     
-    
-    
-   
-
 
 }
 
@@ -92,8 +88,6 @@ justify-content: center;
     border-top-left-radius: 3%;
     border-top-right-radius: 3%;
     
-    
-
 
 }
 
@@ -103,8 +97,6 @@ justify-content: center;
     flex-direction: column;
     padding-top: 3rem;
     gap: 2rem;
-
-
 }
 
 .card-metrics{
@@ -123,4 +115,51 @@ justify-content: center;
 
 }
 
+@media (min-width: 970px){
+    body{
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
+    }
+   
+    .card-container{
+
+        flex-direction: row-reverse;
+        padding: 0;
+        margin-top: 15rem;
+        border-radius: 2%;
+    }
+
+    .card-img{
+
+        background-image: url(/images/image-header-desktop.jpg);
+        height: auto;
+        border-bottom-right-radius: 2% ;
+        border-top-left-radius: 0 ;
+    }
+
+    .card-text{
+
+        padding: 3rem;
+
+        h1{
+            text-align: left;
+        }
+        p{
+            text-align: left;
+        }
+    }
+
+    .card-metrics{
+
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+
+
+    
+}
+ 
